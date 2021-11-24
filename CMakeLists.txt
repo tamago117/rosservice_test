@@ -162,6 +162,16 @@ target_link_libraries(empty_client
   ${catkin_LIBRARIES}
 )
 
+add_executable(setBool_server src/setBool_server.cpp)
+target_link_libraries(setBool_server
+  ${catkin_LIBRARIES}
+)
+
+add_executable(setBool_client src/setBool_client.cpp)
+target_link_libraries(setBool_client
+  ${catkin_LIBRARIES}
+)
+
 #############
 ## Install ##
 #############
